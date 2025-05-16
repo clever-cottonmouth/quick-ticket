@@ -42,6 +42,7 @@ export async function createTicket(
         subject,
         description,
         priority,
+        status: 'open',
         user: {
           connect: { id: user.id },
         },
